@@ -19,6 +19,8 @@ scene.add( light );
 // const gridHelper = new THREE.GridHelper( size, divisions );
 // scene.add( gridHelper );
 
+
+
 const bgScene = new THREE.TextureLoader().load("./images/space.jpg")
 scene.background = bgScene
 
@@ -49,7 +51,7 @@ controls.update();
 
 function getRandomNum(min, max) {
     return Math.random() * (max - min) + min;
-  }
+}
 
 
 function addStars(num){
