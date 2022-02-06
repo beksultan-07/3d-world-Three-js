@@ -20,9 +20,14 @@ scene.add( light );
 // scene.add( gridHelper );
 
 
+if(window.innerWidth <= 400){
+    const bgScene = new THREE.TextureLoader().load("./images/phonebg.jpg")
+    scene.background = bgScene
+}else{
+    const bgScene = new THREE.TextureLoader().load("./images/space.jpg")
+    scene.background = bgScene
+}
 
-const bgScene = new THREE.TextureLoader().load("./images/space.jpg")
-scene.background = bgScene
 
 
 const moonTexture = new THREE.TextureLoader().load("./images/moon.jpg")
@@ -73,6 +78,7 @@ function animate() {
     requestAnimationFrame( animate );
     renderer.render( scene, camera )
     controls.update();
+
     
     t += 0.01;   
     
