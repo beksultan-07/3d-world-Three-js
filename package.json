@@ -1,0 +1,15 @@
+{
+  "name": "3d_world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "bekas",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.137.5",
+    "three-orbit-controls": "^82.1.0"
+  }
+}
